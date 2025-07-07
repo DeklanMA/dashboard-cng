@@ -1,4 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+import withPWA from "@ducanh2912/next-pwa";
 
-export default nextConfig;
+const nextConfig = {
+    output: 'export',
+};
+
+export default withPWA({
+  dest: "public",
+  cacheOnFrontEndNav: true,
+  aggressiveFrontEndNavCaching: true,
+  reloadOnOnline: true,
+  swcMinify: true,
+  disable: false, // Set to true to disable PWA in development mode
+  workboxOptions: {
+    disableDevLogs: false,
+  },
+})(nextConfig);

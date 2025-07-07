@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.9",
     "@rive-app/react-canvas": "^4.21.1",
     "@rive-app/react-webgl2": "^4.21.4",
     "next": "15.3.3",
@@ -17,6 +18,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "webpack": "^5.99.9"
   }
 }
